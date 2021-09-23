@@ -17,7 +17,7 @@ def encrypt(message):
 	cipher = ''
 	for letter in message:
 		if letter != ' ':
-			cipher += MORSE_CODE_DICT[letter] + ' '
+			cipher += MORSE_CODE_DICT[letter.upper()] + ' '
 		else:
 			cipher += ' '
 	return cipher
